@@ -1,0 +1,186 @@
+/* Menu et sous Menu*/
+:root{
+    --hauteur-menu: 60px;
+}
+section{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+section{
+    width: 100%;
+    font-size: 18px;
+    position: sticky;
+    top: 0;
+
+}
+
+section > ul{
+    display: flex;
+    text-align: center;
+    box-shadow: 0px 1px 2px 1px rgba(0,0,0,0,.3);
+    height: var(--hauteur-menu);
+}
+section ul{
+    list-style-type: none;
+
+}
+section > ul > li{
+   
+    position: relative;
+    height: 100%;
+    flex: 1;
+}
+
+section > ul > li > a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+li a{
+    text-decoration: none;
+    color: black;
+}
+.menu-deroulant > a:after{
+    font-size: 15px;
+    margin-left: 7px;
+    display: inline-block;
+    content: ">";
+    
+}
+
+.sous-menu{
+    border-radius: 2px;
+    overflow: hidden;
+    max-height: 0;
+    margin-top: var(--hauteur-menu);
+    width: 100%;
+    text-align: left;
+    background-color: #578192;
+    
+}
+
+.sous-menu > li >a{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    height: 50px;
+    padding-left: 20px;
+    
+}
+
+
+
+section > ul >li:hover > a{
+    color: #2169ec;
+}
+
+.sous-menu > li:hover{
+    background-color: rgba(33, 105, 236, 0.3);
+}
+
+.sous-menu > li:hover > a{
+    color: white;
+}
+
+@keyframes rotationFleche {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(90deg);
+    }
+}
+
+.menu-deroulant:hover > a:after{
+    animation: rotationFleche 0.2s linear forwards;
+}
+@keyframes apparitionSousMenu{
+    0%{
+        box-shadow: 0px 3px 3px 1px rgba(0,0,0,0,.0);
+        border-top: 3px solid #2169ec;
+    }
+    30%{
+        box-shadow: 0px 3px 3px 1px rgba(0,0,0,0,.3);
+    }
+    100%{
+        max-height: 50em;
+        border-top: 3px solid #2169ec;
+        box-shadow: 0px 3px 3px 1px rgba(0,0,0,0,.3);
+    }
+}
+
+.menu-deroulant:hover > .sous-menu{
+    animation: apparitionSousMenu 1s forwards;
+}
+/*Fin du Menu*/
+
+
+
+
+
+
+body{
+
+    background-attachment: fixed;
+    background-image: url("Images/nikevsadidas.jpg");
+    background-size: 100%;
+}
+
+#titre{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+#un{
+    color :black;
+}
+#deux{
+    color: black;
+}
+
+#trois{
+    color: white;
+}
+
+#quatre{
+    color: white;
+}
+
+
+/*Fin style d'écriture des h*/
+span{
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width : 750px;
+    height : 400px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+    h1{
+        text-shadow:#e7f6ff 0 -1px 0,
+#830b60 1px 1px 0,
+#a70e60 2px 2px 0,
+#d51c60 3px 3px 0,
+#ee4b60 4px 4px 0,
+#fc7961 5px 5px 0,
+#333 5px 5px 10px;color:#E000F3;
+position: center;
+    }
+
+    body{
+        background-color: #2F4F4F;
+    }
+
+
+    p{
+        
+    }
